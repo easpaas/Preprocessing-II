@@ -1,8 +1,16 @@
 // Navigation Styles here
-header {
-  h1 {
-    @media (max-width: 500px) {
-      background-color: red;
+nav {
+  @media @mobile {
+    border-bottom: 2px dashed lightgray;
+    display: flex;
+    justify-content: space-around;
+    padding: 2%;
+  } // this closes media query
+  a {
+    @media @mobile { 
+      text-decoration: none;
+      color: black;
+      font-size: 1.2rem;
     } // this closes media query
-  } // this closes h1
-} // this closes header
+  } // this closes anchor
+} // this closes nav

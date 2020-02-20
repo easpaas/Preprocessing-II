@@ -169,8 +169,51 @@ img {
   margin: 0 auto;
 }
 @media (max-width: 500px) {
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 500px) {
   header h1 {
-    background-color: red;
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 2%;
+  }
+}
+@media (max-width: 500px) {
+  .top-content {
+    width: 90%;
+    margin: 0 auto;
+    border-bottom: 2px dashed lightgray;
+  }
+}
+@media (max-width: 500px) {
+  .top-content .about h2 {
+    padding: 0%;
+    margin: 4% 0;
+    width: 80%;
+    font-size: 2.2rem;
+  }
+}
+@media (max-width: 500px) {
+  .top-content .about p {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 500px) {
+  nav {
+    border-bottom: 2px dashed lightgray;
+    display: flex;
+    justify-content: space-around;
+    padding: 2%;
+  }
+}
+@media (max-width: 500px) {
+  nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
   }
 }
 .footer {
