@@ -10,7 +10,6 @@
       display: block;
       margin: 4% 0;
     } // this closes media query
-   
     
     .text-content {
       width: 48%;
@@ -48,10 +47,6 @@
     .text-content {
       padding-left: 1%;
       padding-right: 0;
-
-      // @media @mobile {
-      //   margin: 2% 0;
-      // } // this closes media query
     } // this closes .text-content
 
     .img-content {
@@ -68,6 +63,7 @@
       width: 100%;
       margin: 4% auto;
     } // this closes the media query 
+
     img {
       border-radius: 10px;
     } // this closes img
@@ -96,12 +92,10 @@
       } // this closes media query
 
       .btn {
+        .button(@white, @eastern-blue, 1rem, 4%, center);
+
         @media @mobile {
-          border-radius: 1rem;
-          text-align: center;
-          color: @white;
-          background-color: @eastern-blue;
-          padding: 4%;      
+          .button(@white, @eastern-blue, 1rem, 4%, center);
         } // this closes media query
       } // this closes .btn
     } // this closes .destination

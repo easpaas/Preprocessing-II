@@ -1,1 +1,12 @@
 // Mixins in here
+.button(@color, @background, @radius, @padding, @align) {
+  color: @color;
+  background-color: @background;
+  border-radius: @radius;
+  padding: @padding;
+  text-align: @align;
+  &:hover {
+    color: @background;
+    background-color: @color;
+  } // this closes button hover
+} // this closes button

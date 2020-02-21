@@ -1,5 +1,10 @@
 // Navigation Styles here
 nav {
+  width: 25%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
   @media @mobile {
     border-bottom: 2px dashed lightgray;
     display: flex;
@@ -7,6 +12,10 @@ nav {
     padding: 2%;
   } // this closes media query
   a {
+    text-decoration: none;
+    color:black;
+    font-size: 1.5rem;
+
     @media @mobile { 
       text-decoration: none;
       color: black;
