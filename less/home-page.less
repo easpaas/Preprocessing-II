@@ -6,31 +6,53 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
+    @media @mobile {
+      display: block;
+      margin: 4% 0;
+    } // this closes media query
    
     
     .text-content {
       width: 48%;
       padding-right: 1%;
-    }
+      
+      @media @mobile {
+        width: 100%;
+      } // this closes media query
+    } // this closes .text-content
 
     .img-content {
       width: 48%;
       padding-left: 1%;
 
+      @media @mobile {
+        width: 100%;
+      } // this closes media query
+
       img {
         border-radius: 10px;
-      }
-    }
-  }
+      } // this closes img
+    } // this closes .img-content
+  } // this closes content-section
 
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
 
+    @media @mobile {
+      display: flex;
+      flex-direction: column-reverse;
+      padding-bottom: 4%;
+    } // this closes media query
+
     .text-content {
       padding-left: 1%;
       padding-right: 0;
-    }
+
+      // @media @mobile {
+      //   margin: 2% 0;
+      // } // this closes media query
+    } // this closes .text-content
 
     .img-content {
       padding-right: 1%;
@@ -42,10 +64,14 @@
     width: 75%;
     margin: 0 auto 30px;
 
+    @media @mobile {
+      width: 100%;
+      margin: 4% auto;
+    } // this closes the media query 
     img {
       border-radius: 10px;
-    }
-  }
+    } // this closes img
+  } // this closes .inverse-content
 
   .content-pick {
     padding-top: 30px;
@@ -53,9 +79,31 @@
     display: flex;
     justify-content: space-between;
 
+    @media @mobile {
+      display: block;
+      padding-top: 0;
+      margin: 6% 0;
+    } // this closes media query
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
-    }
-  }
+
+      @media @mobile {
+        width: 100%;
+        padding: 0 6%;
+        margin: 9% 0;
+      } // this closes media query
+
+      .btn {
+        @media @mobile {
+          border-radius: 1rem;
+          text-align: center;
+          color: @white;
+          background-color: @eastern-blue;
+          padding: 4%;      
+        } // this closes media query
+      } // this closes .btn
+    } // this closes .destination
+  } // this closes .content-pick
 }// home
